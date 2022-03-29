@@ -1,14 +1,8 @@
-<!-- @Output example -->
-<!-- from event emitter header.component.ts -->
-<!-- featureSelected is the variable emitted by the @Output directive and it is an event -->
-<!-- the event will be passed to the function inside header.component.ts  -->
+
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-
-      <!-- the function will pass the value and save it on loadedFeature variable -->
-      <!-- the function will toggle as the loadedFeature variable changes it's state -->
       <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
       <app-shopping-list *ngIf="loadedFeature === 'shopping-list'"></app-shopping-list>
     </div>
