@@ -12,6 +12,7 @@ export class RecipeItemComponent implements OnInit {
   // the @Input component will recive a value from the recipe-list.component.html in <app-recipe-item *ngFor="let recipesEl of recipes">
   // and will be used in the recipe-item.component.html interpolations
   // the *ngFor will work with the recipe-list.component.html
+  
 
   @Input()
   recipe!: Recipe;
