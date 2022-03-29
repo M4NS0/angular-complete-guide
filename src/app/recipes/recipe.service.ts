@@ -14,4 +14,4 @@ export class RecipeService {
         // slice will return a new array copied from the recipes array, only get a copy
         return this.recipes.slice();
     }
-}
+} 
