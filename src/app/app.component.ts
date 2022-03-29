@@ -11,7 +11,6 @@ export class AppComponent {
   loadedFeature = 'recipe';
 
   onNavigate(feature: any) {
-    // @Output Example
     this.loadedFeature = feature;
   }
 }

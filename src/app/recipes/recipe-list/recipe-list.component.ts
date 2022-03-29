@@ -7,7 +7,8 @@ import { Recipe } from '../recipes.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-
+  // @Input example
+  // the recipe array will be send to <app-recipe-list [recipe]='recipeEl'> and will populate the recipeEl 
   recipes: Recipe[] = [
     new Recipe('Recipe one', 'First description', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
     new Recipe('Recipe two', 'Second description', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
