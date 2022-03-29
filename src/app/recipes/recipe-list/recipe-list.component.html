@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <!-- @Input Example -->
+        <!-- 'recipeEl' at *ngFor uses elements from the passed array [recipe] and populates recipe-item.component.html --> 
+        <!-- 'recipeEl' in [recipe]='recipeEl' is populated by [recipe] that cames from recipe-list.component.ts -->
+        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl"></app-recipe-item>
+        
+
+        
+    </div>
+</div>
