@@ -8,17 +8,12 @@ import { ShoppingListService } from '../shopping-list.service';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit {
-  // @ViewChild('nameInput', {static: false}) nameInputRef!: ElementRef;
-  // @ViewChild('amountInput', {static: false}) amountInputRef!: ElementRef;
-
 
   constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit(): void {
   }
   onAddItem(form: NgForm) {
-    // const ingName = this.nameInputRef.nativeElement.value;
-    // const ingAmount = this.amountInputRef.nativeElement.value;
     const value = form.value;
     const newIngredient = new Ingredient(value.name, value.amount);
     this.shoppingListService.addIngredient(newIngredient);
